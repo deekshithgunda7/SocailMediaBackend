@@ -4,4 +4,4 @@ py -3 -m venv venv  ----->crerate virtual env
 shift+alt+F for formatting file in vscode
 
 To run app:
->uvicorn app.main:app --reload
+uvicorn app.main:app --reload
