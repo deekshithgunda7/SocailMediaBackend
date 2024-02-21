@@ -1,0 +1,7 @@
+>pip freeze  -->will let u know the dependencies downloaded
+venv\Scripts\activate.bat  -->activate venv in cmd
+py -3 -m venv venv  ----->crerate virtual env
+shift+alt+F for formatting file in vscode
+
+To run app:
+>uvicorn app.main:app --reload
