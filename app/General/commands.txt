@@ -5,3 +5,21 @@ shift+alt+F for formatting file in vscode
 
 To run app:
 uvicorn app.main:app --reload
+
+
+Inside Postman Login route if we want to set env variable(JWT) and add accesstoken directly to JWT and use in other routes
+Below is test script
+pm.environment.set("JWT", pm.response.json().access_token);
+In Authorization field slect bearer token and add {{JWT}} --> which refer to actual access token
+
+
+query paramters
+
+it filters to linit post to 5 and skip first 2 posts
+{{URL}}posts?limit=5&skip=2
+
+it filters based on search and name is yash
+{{URL}}posts?search=yash
+
+if we have space in search then how to add it in query paramters
+{{URL}}posts?search=yash%20kgf
